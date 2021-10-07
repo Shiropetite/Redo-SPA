@@ -1,4 +1,4 @@
-# Quasar-laSPA
+# Quasar - laSPA
 
 Je m'amuse à refaire le site de la SPA pour m'entrainer à faire du Quasar / Vue.js.
 
