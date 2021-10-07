@@ -1,22 +1,14 @@
-# Spa (redo-spa)
+# Quasar - laSPA
 
+## Si vous voulez lancer le projet
 
-
-## Install the dependencies
+### Pour installer les dépendances
 ```bash
 yarn
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Executer le code
 ```bash
 quasar dev
 ```
 
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
