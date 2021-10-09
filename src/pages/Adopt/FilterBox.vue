@@ -37,6 +37,27 @@
           <div class="col-10">
             <div class="text-bold">Ville</div>
             <q-input v-model="searchAnimal.localisation" color="dark" outlined dense />
+            <q-select
+              clearable
+              v-model="searchAnimal.localisation"
+              use-input
+              hide-selected
+              outlined
+              fill-input
+              label="Entrez une adresse"
+              :options="options.villes"
+            >
+              <!-- <template v-slot:option="scope">
+                <q-item v-bind="scope.itemProps">
+                  <q-item-section avatar>
+                    <q-icon name="fal fa-city" />
+                  </q-item-section>
+                  <q-item-section>
+                    <q-item-label>{{formatAddress(scope.opt)}}</q-item-label>
+                  </q-item-section>
+                </q-item>
+              </template>-->
+            </q-select>
           </div>
 
           <q-checkbox class="col-2" v-model="searchAnimal.sos" label="SOS" color="dark" />
@@ -47,6 +68,7 @@
 </template>
 <script>
 import { defineComponent } from "vue";
+import villes from "src/model/ville.js";
 
 const ages = ["2 mois", "6 mois", "1 an", "3 ans", "5 ans", "10 ans et +"];
 
@@ -75,6 +97,7 @@ const options = {
       value: "indiferrent",
     },
   ],
+  villes: villes,
 };
 
 export default defineComponent({

@@ -20,7 +20,7 @@
         <div class="col-12">{{animal.refuge.name}}</div>
         <div class="row items-center">
           <q-icon name="room" />
-          <div class="q-pl-xs">{{animal.refuge.postalCode}} {{animal.refuge.region}}</div>
+          <div class="q-pl-xs">{{animal.refuge.postalCode}} {{animal.refuge.commune}}</div>
         </div>
       </q-item-label>
     </q-item>

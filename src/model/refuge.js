@@ -4,7 +4,7 @@ export default {
     name: 'Refuge de Brugheas',
     address: '9 bis, La Boucharde',
     postalCode: '03700',
-    region: 'Brugheas',
+    commune: 'Brugheas',
     mail: 'brugheas@la-spa.fr',
     tel: '0470324342'
   },
@@ -13,7 +13,7 @@ export default {
     name: 'Refuge de Cliron',
     address: '8 route de Renwez',
     postalCode: '08090',
-    region: 'Cliron',
+    commune: 'Cliron',
     mail: 'cliron@la-spa.fr',
     tel: '0324549040'
   },
@@ -22,7 +22,7 @@ export default {
     name: 'Refuge Le Clergue',
     address: 'Route de Villefranche',
     postalCode: '09500',
-    region: 'Mirepoix',
+    commune: 'Mirepoix',
     mail: 'mirepoix@la-spa.fr',
     tel: '0561688977'
   },
@@ -31,7 +31,7 @@ export default {
     name: 'Refuge Le Cabourg',
     address: 'Avenue de l\'hippodrome',
     postalCode: '14390',
-    region: 'Cabourg',
+    commune: 'Cabourg',
     mail: 'cabourg@la-spa.fr',
     tel: '0231280971'
   },
@@ -40,7 +40,7 @@ export default {
     name: 'Refuge Le Bois Pinson',
     address: 'Route des Eaux',
     postalCode: '35500',
-    region: 'Vitré',
+    commune: 'Vitré',
     mail: 'vitre@la-spa.fr',
     tel: '029752132'
   },
@@ -49,7 +49,7 @@ export default {
     name: 'Refuge de Luynes',
     address: 'Malitourne',
     postalCode: '37230',
-    region: 'Luynes',
+    commune: 'Luynes',
     mail: 'luynes@la-spa.fr',
     tel: '0247421047'
   },
@@ -58,7 +58,7 @@ export default {
     name: 'Refuge Gerhard Cramer',
     address: 'Ferme du voisinage - Route Nationale',
     postalCode: '57680',
-    region: 'Arry',
+    commune: 'Arry',
     mail: 'arry@la-spa.fr',
     tel: '0387520899'
   },
@@ -67,7 +67,7 @@ export default {
     name: 'Refuge CAP de Perpignan',
     address: '...',
     postalCode: '66000',
-    region: 'Perpignan',
+    commune: 'Perpignan',
     mail: 'perpignan@la-spa.fr',
     tel: '0468575253'
   },
@@ -76,7 +76,7 @@ export default {
     name: 'Refuge "La Ferme du Relais"',
     address: '125 route de Lorgues',
     postalCode: '83780',
-    region: 'Flayosc',
+    commune: 'Flayosc',
     mail: 'flayosc@la-spa.fr',
     tel: '0494707066'
   },
@@ -85,7 +85,7 @@ export default {
     name: 'Refuge de La Roche sur Yon',
     address: 'Impasse François Cevert - Route de Nantes',
     postalCode: '85000',
-    region: 'La Roche sur Yon',
+    commune: 'La Roche sur Yon',
     mail: 'larochesuryon@la-spa.fr',
     tel: '0251054101'
   }
