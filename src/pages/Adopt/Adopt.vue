@@ -34,8 +34,7 @@ export default defineComponent({
   setup(props) {
     const searchAnimal = ref({
       species: props.selected ? props.selected : null,
-      localisation: null,
-      refuge: null,
+      commune: null,
       gender: "indiferrent",
       age: {
         min: 0,
@@ -71,6 +70,13 @@ export default defineComponent({
         if (searchAnimal.value.sos) {
           animalsFiltered.value = animalsFiltered.value.filter(
             (animal) => animal.sos
+          );
+        }
+
+        // commune
+        if (searchAnimal.value.commune) {
+          animalsFiltered.value = animalsFiltered.value.filter(
+            (animal) => animal.refuge.commune === searchAnimal.value.commune
           );
         }
 

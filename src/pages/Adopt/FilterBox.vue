@@ -35,28 +35,32 @@
 
         <div class="col-6 row justify-end items-end">
           <div class="col-10">
-            <div class="text-bold">Ville</div>
-            <q-input v-model="searchAnimal.localisation" color="dark" outlined dense />
+            <div class="text-bold">Commune</div>
             <q-select
-              clearable
-              v-model="searchAnimal.localisation"
+              v-model="searchAnimal.commune"
               use-input
-              hide-selected
               outlined
-              fill-input
-              label="Entrez une adresse"
-              :options="options.villes"
+              input-debounce="0"
+              :options="villesOptions"
+              @filter="filterFn"
+              clearable
+              options-selected-class="text-primary"
             >
-              <!-- <template v-slot:option="scope">
-                <q-item v-bind="scope.itemProps">
+              <template v-slot:option="scope">
+                <q-item clickable v-bind="scope.itemProps">
                   <q-item-section avatar>
-                    <q-icon name="fal fa-city" />
+                    <q-icon color="dark" name="pets" />
                   </q-item-section>
-                  <q-item-section>
-                    <q-item-label>{{formatAddress(scope.opt)}}</q-item-label>
+                  <q-item-section class="text-dark">
+                    <q-item-label>{{scope.opt}}</q-item-label>
                   </q-item-section>
                 </q-item>
-              </template>-->
+              </template>
+              <template v-slot:no-option>
+                <q-item>
+                  <q-item-section class="text-grey-9 text-italic">Aucun refuge ne se trouve ici</q-item-section>
+                </q-item>
+              </template>
             </q-select>
           </div>
 
@@ -67,7 +71,7 @@
   </div>
 </template>
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import villes from "src/model/ville.js";
 
 const ages = ["2 mois", "6 mois", "1 an", "3 ans", "5 ans", "10 ans et +"];
@@ -97,17 +101,36 @@ const options = {
       value: "indiferrent",
     },
   ],
-  villes: villes,
 };
 
 export default defineComponent({
   name: "Filter",
   props: ["searchAnimal"],
   setup() {
+    const villesOptions = ref([]);
+
+    const filterFn = async (val, update, abort) => {
+      if (val.length < 1) {
+        abort();
+        return;
+      }
+
+      update(() => {
+        let optionList = villes.filter((v) =>
+          v.toLowerCase().startsWith(val.toLowerCase())
+        );
+
+        villesOptions.value = optionList;
+      });
+    };
     return {
       options,
       ages,
+      filterFn,
+      villesOptions,
     };
   },
 });
 </script>
+<style>
+</style>
