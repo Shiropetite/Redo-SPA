@@ -104,17 +104,17 @@ export default {
     }
   ],
   dogs: [
-    // {
-    //   id: 1,
-    //   name: 'Yoshi',
-    //   gender: 'male',
-    //   breed: 'Berger',
-    //   size: 'grand',
-    //   birthDate: '17/04/2014',
-    //   sos: false,
-    //   refuge: refuges['83'],
-    //   image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/516883.jpg?itok=d8tS5Ljf'
-    // },
+    {
+      id: 1,
+      name: 'Sly',
+      gender: 'male',
+      breed: 'Border Collie',
+      size: 'moyen',
+      birthDate: '17/08/2019',
+      sos: false,
+      refuge: refuges['03'],
+      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/518052.jpg?itok=EQw2xFNr'
+    },
     {
       id: 2,
       name: 'Tania',

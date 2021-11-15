@@ -1,27 +1,32 @@
 <template>
-  <q-page style="padding-top: 65px">
-    <spa-filter-box :searchAnimal="searchAnimal" />
+  <div class="animal-list">
+    <div>
+      <spa-filter-box :searchAnimal="searchAnimal" />
 
-    <div class="row justify-center q-py-xl">
-      <div class="col-10">
-        <div class="row justify-center q-gutter-y-lg q-gutter-x-md">
-          <div
-            v-for="animal in animalsFiltered"
-            :key="animal.id"
-            :style="$q.screen.lt.md ? 'max-width: 200px': 'width: 250px'"
-          >
-            <spa-animal-card :animal="animal" />
+      <div class="row justify-center q-py-xl">
+        <div class="col-10">
+          <div class="row justify-center q-gutter-y-lg q-gutter-x-md">
+            <div
+              v-for="animal in animalsFiltered"
+              :key="animal.id"
+              :style="$q.screen.lt.md ? 'max-width: 200px' : 'width: 250px'"
+            >
+              <spa-animal-card :animal="animal" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </q-page>
+    <!-- <div>
+      <img class="background-image" src="~assets/cat-and-dog.jpg"/>
+    </div>-->
+  </div>
 </template>
 
 <script>
 import { defineComponent, ref, watch, unref } from "vue";
-import FilterBox from "./FilterBox.vue";
-import AnimalCard from "./AnimalCard.vue";
+import FilterBox from "./components/FilterBox.vue";
+import AnimalCard from "./components/AnimalCard.vue";
 import animals from "src/model/animals";
 
 export default defineComponent({

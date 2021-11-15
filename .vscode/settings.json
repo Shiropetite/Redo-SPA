@@ -1,5 +1,5 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "vetur.experimental.templateInterpolationService": true
+  "volar.experimental.templateInterpolationService": true
 }

@@ -1,8 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <spa-header />
+    <router-view name="header" />
 
-    <div>
+    <div style="margin-top: 65px">
       <transition appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
         <router-view />
       </transition>
@@ -11,16 +11,10 @@
 </template>
 
 <script>
-import Header from "components/Header.vue";
-
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "MainLayout",
-
-  components: {
-    spaHeader: Header,
-  },
   setup() {
     return {};
   },

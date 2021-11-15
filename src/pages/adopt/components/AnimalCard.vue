@@ -1,6 +1,6 @@
 <template>
   <q-card>
-    <img :src="animal.image" :style="$q.screen.lt.md ? 'height: 140px': 'height: 160px'" />
+    <img :src="animal.image" :style="$q.screen.lt.md ? 'height: 140px' : 'height: 160px'" />
 
     <q-item clickable class="column">
       <q-btn
@@ -12,15 +12,15 @@
       />
       <q-item-section>
         <div class="row q-gutter-x-xs items-center">
-          <q-item-label>{{animal.name}}</q-item-label>
+          <q-item-label>{{ animal.name }}</q-item-label>
           <q-icon :name="animal.gender" />
         </div>
       </q-item-section>
       <q-item-label caption class="row q-pt-sm q-gutter-y-xs">
-        <div class="col-12">{{animal.refuge.name}}</div>
+        <div class="col-12">{{   animal.refuge.name }}</div>
         <div class="row items-center">
           <q-icon name="room" />
-          <div class="q-pl-xs">{{animal.refuge.postalCode}} {{animal.refuge.commune}}</div>
+          <div class="q-pl-xs">{{ animal.refuge.postalCode }} {{ animal.refuge.commune }}</div>
         </div>
       </q-item-label>
     </q-item>
@@ -31,6 +31,6 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   props: ["animal"],
-  setup() {},
+  setup() { },
 });
 </script>

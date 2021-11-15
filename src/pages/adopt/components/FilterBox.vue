@@ -52,7 +52,7 @@
                     <q-icon color="dark" name="pets" />
                   </q-item-section>
                   <q-item-section class="text-dark">
-                    <q-item-label>{{scope.opt}}</q-item-label>
+                    <q-item-label>{{ scope.opt }}</q-item-label>
                   </q-item-section>
                 </q-item>
               </template>

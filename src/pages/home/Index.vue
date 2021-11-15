@@ -24,32 +24,7 @@
 </template>
 <script>
 import { defineComponent, ref } from "vue";
-import SearchBox from "./SearchBox.vue";
-
-const links = [
-  {
-    association: [
-      "nos-missions",
-      "nos-valeurs",
-      "notre-cellule-anti-trafic",
-      "gouvernance",
-      "notre-histoire",
-      "nos-statuts",
-      "nos-comptes",
-      "reglement-interieur",
-    ],
-    actualites: ["generale", "lutte-contre-maltraitance", "elections"],
-    adopter: [
-      "chercher-animal",
-      "trouver-refuge",
-      "adoption-responsable",
-      "condition",
-      "temoignage",
-      "aide",
-    ],
-    agir: ["adhérer", "donner", "benevole"],
-  },
-];
+import SearchBox from "./components/SearchBox.vue";
 
 export default defineComponent({
   name: "PageIndex",
@@ -63,10 +38,6 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .header {
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-
   &-background {
     position: fixed;
     top: 0;

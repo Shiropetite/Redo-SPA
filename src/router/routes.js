@@ -4,8 +4,14 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('src/pages/home/Index.vue') },
-      { path: '/adopter-animaux/:selected?', component: () => import('src/pages/Adopt/Adopt.vue'), props: true }
+      { path: '', components: {
+        header: () => import('src/components/Header.vue'),
+        default: () => import('src/pages/home/Index.vue')
+      } },
+      { path: '/adopter-animaux/:selected?', components: {
+        header: () => import('src/components/Header.vue'),
+        default: () => import('src/pages/Adopt/List.vue')
+      }, props: true }
     ]
   },
 
