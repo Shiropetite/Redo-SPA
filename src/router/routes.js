@@ -10,7 +10,7 @@ const routes = [
       } },
       { path: '/adopter-animaux/:selected?', components: {
         header: () => import('src/components/Header.vue'),
-        default: () => import('src/pages/Adopt/List.vue')
+        default: () => import('src/pages/adopt/List.vue')
       }, props: true }
     ]
   },
