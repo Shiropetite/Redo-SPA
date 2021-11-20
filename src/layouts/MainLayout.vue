@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <router-view name="header" />
 
-    <div style="margin-top: 65px">
+    <div>
       <transition appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
         <router-view />
       </transition>

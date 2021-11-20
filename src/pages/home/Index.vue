@@ -23,7 +23,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import SearchBox from "./components/SearchBox.vue";
 
 export default defineComponent({

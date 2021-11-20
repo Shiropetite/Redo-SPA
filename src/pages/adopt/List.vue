@@ -131,3 +131,8 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="scss">
+.animal-list {
+  margin-top: 65px;
+}
+</style>

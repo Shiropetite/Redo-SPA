@@ -26,6 +26,24 @@ export default {
     mail: 'mirepoix@la-spa.fr',
     tel: '0561688977'
   },
+  '10': {
+    number: 10,
+    name: 'Refuge de Menois',
+    address: 'Chemin départemental de Baires',
+    postalCode: '10410',
+    commune: 'Saint Parres aux Tertres',
+    mail: 'stparresauxtertres@la-spa.fr',
+    tel: '0325811783'
+  },
+  '11': {
+    number: 11,
+    name: 'Refuge de Port la Nouvelle',
+    address: '615, Route de La Palme',
+    postalCode: '11210',
+    commune: 'Port la Nouvelle',
+    mail: 'portlanouvelle@la-spa.fr',
+    tel: '0468336108'
+  },
   '14': {
     number: 14,
     name: 'Refuge Le Cabourg',

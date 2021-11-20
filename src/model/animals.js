@@ -14,13 +14,13 @@ export default {
     },
     {
       id: 2,
-      name: 'Otis',
-      gender: 'male',
+      name: 'Kira',
+      gender: 'femelle',
       breed: 'Européen',
-      birthDate: '01/10/2017',
+      birthDate: '15/06/2021',
       sos: false,
-      refuge: refuges['85'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517168.jpeg?itok=rb54-TvH'
+      refuge: refuges['10'],
+      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522186.jpg?itok=XkVyzTeY'
     },
     {
       id: 3,
@@ -106,14 +106,14 @@ export default {
   dogs: [
     {
       id: 1,
-      name: 'Sly',
+      name: 'Viggo',
       gender: 'male',
-      breed: 'Border Collie',
+      breed: 'Labrador (retriever)',
       size: 'moyen',
-      birthDate: '17/08/2019',
-      sos: false,
-      refuge: refuges['03'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/518052.jpg?itok=EQw2xFNr'
+      birthDate: '01/06/2010',
+      sos: true,
+      refuge: refuges['11'],
+      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522313.jpg?itok=ONq3oHjp'
     },
     {
       id: 2,
@@ -172,14 +172,14 @@ export default {
     },
     {
       id: 7,
-      name: 'Marley',
+      name: 'Bard',
       gender: 'male',
-      breed: 'Epagneul',
-      size: 'grand',
-      birthDate: '25/04/2016',
-      sos: true,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517157.jpg?itok=_Ta4gE5_'
+      breed: 'Beagle',
+      size: 'petit',
+      birthDate: '01/01/2021',
+      sos: false,
+      refuge: refuges['11'],
+      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522314.jpg?itok=rNMi2Tes'
     },
     {
       id: 8,

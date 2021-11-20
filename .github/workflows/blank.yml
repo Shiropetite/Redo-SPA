@@ -60,7 +60,7 @@ jobs:
       - name: Get main branch
         run: |
           git checkout main
-          rm -r ./*
+          rm -r !(README.md) ./* 
         
       - name: get dist file from develop branch
         run: git checkout origin/develop -- dist

@@ -8,5 +8,7 @@ export default [
   'Arry',
   'Perpignan',
   'Flayosc',
-  'La Roche sur Yon'
+  'Port la Nouvelle',
+  'La Roche sur Yon',
+  'Saint Parres aux Tertres'
 ]
