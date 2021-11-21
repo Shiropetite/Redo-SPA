@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "volar.experimental.templateInterpolationService": true
+}
