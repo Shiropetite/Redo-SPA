@@ -2,7 +2,7 @@ name: Build & Deploy
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -59,11 +59,11 @@ jobs:
       
       - name: Get main branch
         run: |
-          git checkout main
-          rm -r !README.md ./* 
+          git checkout gh-pages
+          rm -r ./* 
         
-      - name: get dist file from develop branch
-        run: git checkout origin/develop -- dist
+      - name: get dist file
+        run: git checkout origin/main -- dist
         
       - name: get spa files
         run: |
@@ -73,5 +73,5 @@ jobs:
       - name: Commit & Push
         run: |
           git add --all
-          git commit -m "Update"
+          git commit -m "Update Github Pages"
           git push 
