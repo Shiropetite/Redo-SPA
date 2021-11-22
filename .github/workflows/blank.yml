@@ -32,7 +32,7 @@ jobs:
         with:
           name: build
           path: |
-            /home/runner/work/Quasar-laSPA/Quasar-laSPA/
+            .
             !node_modules 
             !src
         
