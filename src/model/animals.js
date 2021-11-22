@@ -4,215 +4,205 @@ export default {
   cats: [
     {
       id: 1,
-      name: 'Sunday',
-      gender: 'male',
+      name: 'Lagertha',
+      gender: 'female',
       breed: 'Européen',
-      birthDate: '01/08/2021',
+      birthDate: '10/04/2020',
       sos: false,
-      refuge: refuges['35'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517165.jpg?itok=Tae30y4T'
+      // refuge: refuges['35'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22666/lagertha-22666-61952e0f76688.jpg'
     },
     {
       id: 2,
-      name: 'Kira',
-      gender: 'femelle',
+      name: 'Salicorne',
+      gender: 'female',
       breed: 'Européen',
-      birthDate: '15/06/2021',
+      birthDate: '15/05/2021',
       sos: false,
-      refuge: refuges['10'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522186.jpg?itok=XkVyzTeY'
+      //refuge: refuges['10'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21909/salicorne-21909-61952de02b38e.jpg'
     },
     {
       id: 3,
-      name: 'Nikita',
+      name: 'Epinette',
       gender: 'female',
       breed: 'Européen',
-      birthDate: '01/01/2016',
+      birthDate: '01/10/2020',
       sos: false,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517159.jpg?itok=WW9jnlmt'
+      // refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22645/epinette-22645-61952e0e7c331.jpg'
     },
     {
       id: 4,
-      name: 'Shoco',
-      gender: 'male',
+      name: 'Gavotte',
+      gender: 'female',
       breed: 'Européen',
-      birthDate: '01/08/2021',
-      sos: false,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517163.jpg?itok=s8AcgY_d'
+      birthDate: '19/10/2019',
+      sos: true,
+      // refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22982/gavotte-qct-22982-61952e1b0d6c4.jpg'
     },
     {
       id: 5,
-      name: 'Sesame',
-      gender: 'male',
+      name: 'Perle',
+      gender: 'female',
       breed: 'Européen',
-      birthDate: '01/08/2021',
+      birthDate: '01/05/2017',
       sos: false,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517160.jpg?itok=EnB9MVGh'
+      //refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21281/perle-21281-61952db404f1c.jpg'
     },
      {
       id: 6,
-      name: 'Pop Corn',
+      name: 'Molly',
       gender: 'female',
-      breed: 'Croisé / Autre (Maincoon)',
-      birthDate: '01/10/2014',
+      breed: 'Europeen',
+      birthDate: '07/08/2020',
       sos: false,
-      refuge: refuges['09'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517156.jpg?itok=mcd1jvFR'
+      //refuge: refuges['09'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22478/molly-22478-61975efd5bb04.jpg'
     },
     {
       id: 7,
-      name: 'Aya',
-      gender: 'female',
+      name: 'Pinceau',
+      gender: 'male',
       breed: 'Européen',
-      birthDate: '23/07/2021',
+      birthDate: '10/08/2021',
       sos: false,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517139.jpg?itok=OlsI9_tL'
+      // refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/24153/pinceau-cha14640-24153-619b96c7ce4f9.jpg'
     },
     {
       id: 8,
-      name: 'Tricote',
+      name: 'Crossover',
       gender: 'female',
       breed: 'Européen',
-      birthDate: '01/07/2021',
+      birthDate: '17/04/2021',
       sos: false,
-      refuge: refuges['03'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517138.jpg?itok=OnJ4AxCP'
+      // refuge: refuges['03'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22067/crossover-22067-61952dea7d0b6.jpg'
     },
     {
       id: 9,
-      name: 'Croco',
+      name: 'Rafiki',
       gender: 'male',
       breed: 'Européen',
-      birthDate: '01/07/2021',
+      birthDate: '23/09/2020',
       sos: false,
-      refuge: refuges['03'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517136.jpg?itok=0qjIJGQS'
+      //refuge: refuges['03'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22364/rafiki-22364-61952df7a79a7.jpg'
     },
     {
       id: 10,
-      name: 'Houmous',
+      name: 'Polo',
       gender: 'male',
       breed: 'Européen',
-      birthDate: '01/01/2012',
+      birthDate: '31/08/2016',
       sos: true,
-      refuge: refuges['03'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/514420.jpg?itok=4kH9Q0-1'
+      //refuge: refuges['03'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22139/polo-22139-61952ded4f65f.jpg'
     }
   ],
   dogs: [
     {
       id: 1,
-      name: 'Viggo',
+      name: 'Maiko',
       gender: 'male',
-      breed: 'Labrador (retriever)',
-      size: 'moyen',
-      birthDate: '01/06/2010',
-      sos: true,
-      refuge: refuges['11'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522313.jpg?itok=ONq3oHjp'
+      breed: 'Berger belge Malinoiis',
+      birthDate: '05/10/2019',
+      sos: false,
+      // refuge: refuges['11'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21084/maiko-21084-61952da87c06f.jpg'
     },
     {
       id: 2,
-      name: 'Tania',
-      gender: 'female',
-      breed: 'Croisé / Autre (Berger)',
-      size: 'grand',
-      birthDate: '01/01/2009',
-      sos: true,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/516736.jpg?itok=vStmuk-0'
+      name: 'Miku',
+      gender: 'male',
+      breed: 'Croisé / Autre (Labrador)',
+      birthDate: '02/07/2020',
+      sos: false,
+      // refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21642/miku-21642-61952dc5dcb69.jpg'
     },
     {
       id: 3,
-      name: 'Derek',
+      name: 'Lipton',
       gender: 'male',
-      breed: 'Cane corso',
-      size: 'grand',
+      breed: 'Golden retriever',
       birthDate: '11/09/2011',
-      sos: true,
-      refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/516735.jpg?itok=5VjnjBW4'
+      sos: false,
+      // refuge: refuges['08'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23098/lipton-23098-61952e299db70.jpg'
     },
     {
       id: 4,
-      name: 'Filou',
+      name: 'Bayron',
       gender: 'male',
-      breed: 'Fox terrier poil dur',
-      size: 'petit',
-      birthDate: '03/10/2010',
+      breed: 'Croisé (Cane corso, Berger)',
+      birthDate: '01/01/2016',
       sos: true,
-      refuge: refuges['14'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/513841.jpg?itok=ZxR29rQA'
+      //refuge: refuges['14'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/20186/bayron-chao11041-20186-61952d679e7fc.jpg'
     },
      {
       id: 5,
-      name: 'Alpy',
-      gender: 'male',
-      breed: 'Bouvier Bernois',
-      size: 'grand',
-      birthDate: '18/03/2011',
-      sos: true,
-      refuge: refuges['37'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517166.jpg?itok=btLu5AYI'
+      name: 'Vince',
+      gender: 'female',
+      breed: 'Croisé / Berger allemand',
+      birthDate: '11/03/2017',
+      sos: false,
+      // refuge: refuges['37'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22268/vince-22268-61952df3f266b.jpg'
     },
      {
       id: 6,
-      name: 'Mychka',
-      gender: 'female',
-      breed: 'Berger d\'Asie Centrale',
-      size: 'grand',
-      birthDate: '01/11/2020',
+      name: 'Lucky',
+      gender: 'male',
+      breed: 'Jack russel terrier',
+      birthDate: '15/11/2013',
       sos: false,
-      refuge: refuges['57'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517164.jpg?itok=FwE-P0by'
+      //refuge: refuges['57'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23705/lucky-23705-6198f6f64e7b5.jpg'
     },
     {
       id: 7,
-      name: 'Bard',
+      name: 'Onyx',
       gender: 'male',
-      breed: 'Beagle',
-      size: 'petit',
-      birthDate: '01/01/2021',
-      sos: false,
-      refuge: refuges['11'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/522314.jpg?itok=rNMi2Tes'
+      breed: 'Border Collie',
+      birthDate: '01/01/2011',
+      sos: true,
+      // refuge: refuges['11'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/20036/onyx-20036-61952d6234221.jpg'
     },
     {
       id: 8,
-      name: 'Django',
-      gender: 'male',
-      breed: 'Berger de Beauce',
-      size: 'grand',
-      birthDate: '14/08/2014',
-      sos: true,
-      refuge: refuges['57'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/490149.jpg?itok=pvp2IDbG'
+      name: 'Zelena',
+      gender: 'female',
+      breed: 'Berger allemand',
+      birthDate: '04/11/2014',
+      sos: false,
+      //refuge: refuges['57'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23680/zelena-23680-619668b972178.jpg'
     },
     {
       id: 9,
-      name: 'Mia',
-      gender: 'female',
-      breed: 'Chow chow',
-      size: 'grand',
-      birthDate: '01/01/2016',
+      name: 'Lapin',
+      gender: 'male',
+      breed: 'Dogue argentin',
+      birthDate: '27/08/2019',
       sos: false,
-      refuge: refuges['66'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/517149.jpg?itok=0mnsaQjG'
+      // refuge: refuges['66'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22410/lapin-22410-61952dff7f7bc.jpg'
     },
     {
       id: 10,
-      name: 'Marvel',
+      name: 'Oslow',
       gender: 'male',
-      breed: 'Croisé / Autre (StaffordShire bull terrier)',
-      size: 'moyen',
-      birthDate: '01/01/2019',
+      breed: 'Croisé / Autre (Labrador)',
+      birthDate: '25/03/2018',
       sos: false,
-      refuge: refuges['66'],
-      image: 'https://www.la-spa.fr/sites/default/files/styles/fiche_animal_620x375/public/animals/513459.jpg?itok=FcyCF56l'
+      // refuge: refuges['66'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23182/oslow-23182-61952e2d9236d.jpg'
     }
   ]
 }

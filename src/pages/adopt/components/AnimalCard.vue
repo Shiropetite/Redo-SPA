@@ -16,13 +16,13 @@
           <q-icon :name="animal.gender" />
         </div>
       </q-item-section>
-      <q-item-label caption class="row q-pt-sm q-gutter-y-xs">
+      <!-- <q-item-label caption class="row q-pt-sm q-gutter-y-xs">
         <div class="col-12">{{   animal.refuge.name }}</div>
         <div class="row items-center">
           <q-icon name="room" />
           <div class="q-pl-xs">{{ animal.refuge.postalCode }} {{ animal.refuge.commune }}</div>
         </div>
-      </q-item-label>
+      </q-item-label>-->
     </q-item>
   </q-card>
 </template>
