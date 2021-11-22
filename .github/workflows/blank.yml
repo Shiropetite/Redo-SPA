@@ -42,12 +42,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
       - name: Download build
         uses: actions/download-artifact@v2
         with:
-          name: build      
+          name: build 
+
+      - uses: actions/checkout@v2
     
       - name: Config git
         run: git config --global user.name "ShiroPetite"
