@@ -1,15 +1,26 @@
 <template>
-  <div class="animal-list">
+  <div class="animal-list text-dark">
+    <q-btn
+      label="Filtre"
+      flat
+      no-caps
+      icon="tune"
+      @click="drawerOpen = !drawerOpen"
+      class="filter-btn"
+      bg-color="white"
+    />
     <div>
-      <spa-filter-box :searchAnimal="searchAnimal" />
+      <q-drawer show-if-above v-model="drawerOpen" side="left" bordered>
+        <spa-filter-box :searchAnimal="searchAnimal" @close-drawer="drawerOpen = false" />
+      </q-drawer>
 
-      <div class="row justify-center q-py-xl">
-        <div class="col-10">
+      <div :class="drawerOpen ? 'justify-end' : 'justify-center'" class="row q-py-xl">
+        <div class="col-xs-12 col-sm-10">
           <div class="row justify-center q-gutter-y-lg q-gutter-x-md">
             <div
               v-for="animal in animalsFiltered"
               :key="animal.id"
-              :style="$q.screen.lt.md ? 'max-width: 200px' : 'width: 250px'"
+              :style="$q.screen.lt.md ? 'width: 250px' : 'width: 250px'"
             >
               <spa-animal-card :animal="animal" />
             </div>
@@ -17,17 +28,15 @@
         </div>
       </div>
     </div>
-    <!-- <div>
-      <img class="background-image" src="~assets/cat-and-dog.jpg"/>
-    </div>-->
   </div>
 </template>
 
-<script>
-import { defineComponent, ref, watch, unref } from "vue";
+<script lang="ts">
+import { defineComponent, ref, Ref, watch } from "vue";
 import FilterBox from "./components/FilterBox.vue";
 import AnimalCard from "./components/AnimalCard.vue";
 import animals from "src/model/animals";
+import { AnimalFilterBuilder } from "src/composables/useFilter";
 
 export default defineComponent({
   name: "PageIndex",
@@ -39,87 +48,21 @@ export default defineComponent({
   setup(props) {
     const searchAnimal = ref({
       species: props.selected ? props.selected : null,
-      commune: null,
-      gender: "indiferrent",
-      age: {
-        min: 0,
-        max: 5,
-      },
+      location: null,
+      buildingName: null,
+      name: null,
+      gender: "indifferent",
+      age: "indifferent",
       sos: false,
     });
 
-    let animalsFiltered = ref([]);
+    let animalsFiltered: Ref<any[]> = ref([]);
 
     watch(
       () => searchAnimal,
       () => {
-        // species
-        if (searchAnimal.value.species) {
-          if (searchAnimal.value.species === "chat") {
-            animalsFiltered.value = [...animals.cats];
-          } else {
-            animalsFiltered.value = [...animals.dogs];
-          }
-        } else {
-          animalsFiltered.value = [...animals.cats, ...animals.dogs];
-        }
-
-        // gender
-        if (searchAnimal.value.gender !== "indiferrent") {
-          animalsFiltered.value = animalsFiltered.value.filter(
-            (animal) => animal.gender === searchAnimal.value.gender
-          );
-        }
-
-        // sos
-        if (searchAnimal.value.sos) {
-          animalsFiltered.value = animalsFiltered.value.filter(
-            (animal) => animal.sos
-          );
-        }
-
-        // commune
-        if (searchAnimal.value.commune) {
-          animalsFiltered.value = animalsFiltered.value.filter(
-            (animal) => animal.refuge.commune === searchAnimal.value.commune
-          );
-        }
-
-        // age
-        const tab = [
-          { year: 0, month: 2 },
-          { year: 0, month: 6 },
-          { year: 1 },
-          { year: 3 },
-          { year: 5 },
-          { year: 99 },
-        ];
-
-        animalsFiltered.value = animalsFiltered.value.filter((animal) => {
-          const today = new Date();
-          let age =
-            today.getUTCFullYear() - parseInt(animal.birthDate.split("/")[2]);
-
-          let month =
-            today.getUTCMonth() + 1 - parseInt(animal.birthDate.split("/")[1]);
-
-          if (month < 0) {
-            age--;
-            month = 12 - Math.abs(month);
-          }
-
-          let condition = true;
-          if (tab[searchAnimal.value.age.min].month && age === 0) {
-            condition &&= tab[searchAnimal.value.age.min].month <= month;
-          }
-          condition &&= tab[searchAnimal.value.age.min].year <= age;
-
-          if (tab[searchAnimal.value.age.min].max && age === 0) {
-            condition &&= tab[searchAnimal.value.age.min].month >= month;
-          }
-          condition &&= tab[searchAnimal.value.age.max].year >= age;
-          return condition;
-        });
+        const filter = new AnimalFilterBuilder(searchAnimal.value, [...animals]);
+        animalsFiltered.value = filter.buildAll();
       },
       { deep: true, immediate: true }
     );
@@ -127,6 +70,7 @@ export default defineComponent({
     return {
       searchAnimal,
       animalsFiltered,
+      drawerOpen: ref(false)
     };
   },
 });
@@ -134,5 +78,10 @@ export default defineComponent({
 <style lang="scss">
 .animal-list {
   margin-top: 65px;
+
+  .filter-btn {
+    position: absolute;
+    top: 22px;
+  }
 }
 </style>

@@ -3,15 +3,10 @@
     <div class="row justify-center q-gutter-sm items-center">
       <div>
         <div class="text-bold text-dark">Quel animal vous tente ?</div>
-        <q-btn
-          @click="selected = 'chien'"
-          :class="selected === 'chien'? 'bg-primary':''"
-          flat
-          dense
-        >
+        <q-btn @click="selected = 'dog'" :class="selected === 'dog' ? 'bg-primary' : ''" flat dense>
           <img src="dog.png" style="height: 90px; border-radius: 5px" />
         </q-btn>
-        <q-btn @click="selected = 'chat'" :class="selected === 'chat'? 'bg-primary':''" flat dense>
+        <q-btn @click="selected = 'cat'" :class="selected === 'cat' ? 'bg-primary' : ''" flat dense>
           <img src="cat.png" style="height: 90px; border-radius: 5px" />
         </q-btn>
       </div>

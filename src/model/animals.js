@@ -1,208 +1,246 @@
 import refuges from './refuge'
 
-export default {
-  cats: [
-    {
+export default [
+ {
       id: 1,
+      age: 'adult',
+      species: 'cat',
       name: 'Lagertha',
       gender: 'female',
       breed: 'Européen',
       birthDate: '10/04/2020',
       sos: false,
-      // refuge: refuges['35'],
+      refuge: refuges['Yvré-L’Évêque'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22666/lagertha-22666-61952e0f76688.jpg'
     },
     {
       id: 2,
+       species: 'cat',
+       age: 'junior',
       name: 'Salicorne',
       gender: 'female',
       breed: 'Européen',
       birthDate: '15/05/2021',
       sos: false,
-      //refuge: refuges['10'],
+      refuge: refuges['Chameyrat'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21909/salicorne-21909-61952de02b38e.jpg'
     },
     {
       id: 3,
+       species: 'cat',
       name: 'Epinette',
+      age: 'adult',
       gender: 'female',
       breed: 'Européen',
       birthDate: '01/10/2020',
       sos: false,
-      // refuge: refuges['08'],
+      refuge: refuges['Châteaubourg'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22645/epinette-22645-61952e0e7c331.jpg'
     },
     {
       id: 4,
+       species: 'cat',
       name: 'Gavotte',
       gender: 'female',
       breed: 'Européen',
+       age: 'adult',
       birthDate: '19/10/2019',
       sos: true,
-      // refuge: refuges['08'],
+      refuge: refuges['Quimper'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22982/gavotte-qct-22982-61952e1b0d6c4.jpg'
     },
     {
       id: 5,
-      name: 'Perle',
+       species: 'cat',
+      name: 'Lola',
       gender: 'female',
       breed: 'Européen',
-      birthDate: '01/05/2017',
+       age: 'senior',
+      birthDate: '26/11/2016',
       sos: false,
-      //refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21281/perle-21281-61952db404f1c.jpg'
+      refuge: refuges['Chamarande'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/24179/lola-24179-61a10d71444ca.jpg'
     },
      {
       id: 6,
-      name: 'Molly',
-      gender: 'female',
+       species: 'cat',
+      name: 'Ankio',
+      gender: 'male',
       breed: 'Europeen',
-      birthDate: '07/08/2020',
+       age: 'adult',
+      birthDate: '/',
       sos: false,
-      //refuge: refuges['09'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22478/molly-22478-61975efd5bb04.jpg'
+      refuge: refuges['Chamarande'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/25013/ankio-cha14765-25013-61a1156ded15e.jpg'
     },
     {
       id: 7,
-      name: 'Pinceau',
+       species: 'cat',
+      name: 'Rocky',
       gender: 'male',
       breed: 'Européen',
-      birthDate: '10/08/2021',
-      sos: false,
-      // refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/24153/pinceau-cha14640-24153-619b96c7ce4f9.jpg'
+       age: 'junior',
+      birthDate: '11/11/2021',
+      sos: true,
+      refuge: refuges['Pornic'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21198/rocky-21198-61952dacb9e2d.jpg'
     },
     {
       id: 8,
+       species: 'cat',
       name: 'Crossover',
       gender: 'female',
       breed: 'Européen',
+      age: 'junior',
       birthDate: '17/04/2021',
       sos: false,
-      // refuge: refuges['03'],
+      refuge: refuges['Plouhinec'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22067/crossover-22067-61952dea7d0b6.jpg'
     },
     {
       id: 9,
-      name: 'Rafiki',
-      gender: 'male',
+       species: 'cat',
+      name: 'Briana',
+      gender: 'female',
       breed: 'Européen',
-      birthDate: '23/09/2020',
+      age: 'junior',
+      birthDate: '18/07/2021',
       sos: false,
-      //refuge: refuges['03'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22364/rafiki-22364-61952df7a79a7.jpg'
+      refuge: refuges['Millau'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/24376/briana-24376-619e30a9bfd3c.jpg'
     },
     {
       id: 10,
+      species: 'cat',
       name: 'Polo',
       gender: 'male',
       breed: 'Européen',
+      age: 'senior',
       birthDate: '31/08/2016',
       sos: true,
-      //refuge: refuges['03'],
+      refuge: refuges['Plouhinec'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22139/polo-22139-61952ded4f65f.jpg'
-    }
-  ],
-  dogs: [
+    },
     {
-      id: 1,
+      id: 11,
+      species: 'dog',
       name: 'Maiko',
+      age: 'adult',
       gender: 'male',
       breed: 'Berger belge Malinoiis',
       birthDate: '05/10/2019',
       sos: false,
-      // refuge: refuges['11'],
+      refuge: refuges['Luynes'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21084/maiko-21084-61952da87c06f.jpg'
     },
     {
-      id: 2,
+      id: 12,
+      species: 'dog',
       name: 'Miku',
+       age: 'adult',
       gender: 'male',
       breed: 'Croisé / Autre (Labrador)',
       birthDate: '02/07/2020',
       sos: false,
-      // refuge: refuges['08'],
+      refuge: refuges['Chilleurs-Aux-Bois'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21642/miku-21642-61952dc5dcb69.jpg'
     },
     {
-      id: 3,
-      name: 'Lipton',
+      id: 13,
+      species: 'dog',
+      name: 'Catou',
       gender: 'male',
-      breed: 'Golden retriever',
-      birthDate: '11/09/2011',
-      sos: false,
-      // refuge: refuges['08'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23098/lipton-23098-61952e299db70.jpg'
+      breed: 'Jack russel',
+       age: 'adult',
+      birthDate: '25/11/2013',
+      sos: true,
+      refuge: refuges['Rennes'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21545/catou-21545-619d106d46857.jpg'
     },
     {
-      id: 4,
+      id: 14,
+      species: 'dog',
       name: 'Bayron',
       gender: 'male',
       breed: 'Croisé (Cane corso, Berger)',
+       age: 'adult',
       birthDate: '01/01/2016',
       sos: true,
-      //refuge: refuges['14'],
+      refuge: refuges['Chamarande'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/20186/bayron-chao11041-20186-61952d679e7fc.jpg'
     },
      {
-      id: 5,
-      name: 'Vince',
-      gender: 'female',
-      breed: 'Croisé / Berger allemand',
-      birthDate: '11/03/2017',
+      id: 15,
+      species: 'dog',
+      name: 'Odda',
+      gender: 'male',
+      breed: 'Braque',
+       age: 'adult',
+      birthDate: '25/08/2017',
       sos: false,
-      // refuge: refuges['37'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22268/vince-22268-61952df3f266b.jpg'
+      refuge: refuges['Orgeval'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/20395/odda-oaa18434-20395-61952d81ca1a9.jpg'
     },
      {
-      id: 6,
-      name: 'Lucky',
+      id: 16,
+      species: 'dog',
+      name: 'Paco',
       gender: 'male',
-      breed: 'Jack russel terrier',
-      birthDate: '15/11/2013',
+      breed: 'American staffordshire',
+       age: 'adult',
+      birthDate: '03/03/2019',
       sos: false,
-      //refuge: refuges['57'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23705/lucky-23705-6198f6f64e7b5.jpg'
+      refuge: refuges['Saint-Omer'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21305/paco-21305-61952db513340.jpg'
     },
     {
-      id: 7,
+      id: 17,
+      species: 'dog',
       name: 'Onyx',
       gender: 'male',
       breed: 'Border Collie',
+       age: 'senior',
       birthDate: '01/01/2011',
       sos: true,
-      // refuge: refuges['11'],
+      refuge: refuges['Millau'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/20036/onyx-20036-61952d6234221.jpg'
     },
     {
-      id: 8,
-      name: 'Zelena',
-      gender: 'female',
-      breed: 'Berger allemand',
-      birthDate: '04/11/2014',
+      id: 18,
+      species: 'dog',
+      name: 'Falco',
+      gender: 'male',
+      breed: 'Husky siberien',
+       age: 'adult',
+      birthDate: '16/02/2016',
       sos: false,
-      //refuge: refuges['57'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23680/zelena-23680-619668b972178.jpg'
+      refuge: refuges['Cholet'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/21993/falcko-21993-619d1079cffb2.jpg'
     },
     {
-      id: 9,
+      id: 19,
+      species: 'dog',
       name: 'Lapin',
       gender: 'male',
       breed: 'Dogue argentin',
+       age: 'adult',
       birthDate: '27/08/2019',
       sos: false,
-      // refuge: refuges['66'],
+      refuge: refuges['Hermeray'],
       image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/22410/lapin-22410-61952dff7f7bc.jpg'
     },
     {
-      id: 10,
-      name: 'Oslow',
+      id: 20,
+      species: 'dog',
+      name: 'James',
       gender: 'male',
-      breed: 'Croisé / Autre (Labrador)',
-      birthDate: '25/03/2018',
+      breed: 'Croisé / Autre (Dogue)',
+       age: 'adult',
+      birthDate: '01/01/2014',
       sos: false,
-      // refuge: refuges['66'],
-      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23182/oslow-23182-61952e2d9236d.jpg'
+      refuge: refuges['Arry'],
+      image: 'https://www.la-spa.fr/app/assets-spa/uploads/animals/23201/james-23201-619d10bb4fefd.jpg'
     }
-  ]
-}
+]
+   
+    
