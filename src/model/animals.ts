@@ -1,5 +1,161 @@
 import refuges from './refuge'
 
+interface Dog {
+  ID: number,
+  name: string,
+  description: string | null,
+  image: string,
+  sex: 'male' | 'female',
+  species: 'dog' | 'cat',
+  races_label: string,
+  age: 'junior' | 'adult' | 'senior',
+  age_number: number,
+  establishment: {
+    ID: number,
+    name: string,
+  },
+  fad: boolean,
+  expr: boolean,
+  sos: boolean,
+  created_at: string
+}
+
+const dogs: Dog[] = [
+  {
+    ID: 22152,
+    name: "Mystic",
+    description: "Très gentil chien, très affectueux avec l'humain.<br />\r\n<br />\r\nPas ok autres animaux. Placement en maison ou appartement. Il est de 2eme catégorie, certaines démarches sont donc à effectuer pour l'adopter.",
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916711748566933634/mystic-22152-61952ded9542e.png",
+    sex: "male",
+    species: "dog",
+    races_label: "American staffordshire",
+    age: "adult",
+    age_number: 5,
+    establishment: {
+      ID: 7389,
+      name: "Refuge SPA de Marennes - Lyon",
+    },
+    fad: false,
+    expr: false,
+    sos: false,
+    created_at: "2021-11-17 17:29:32"
+  },
+  {
+    ID: 22575,
+    name: "Raïko",
+    description: "Raïko est un arrivé suite à un abandon.<br />\r\n<br />\r\nC'est un chien qui a besoin de se dépenser au quotidien.<br />\r\nIl est très vif, joueur, sociable et câlin.<br />\r\n<br />\r\nIl aura besoin d'une vie en maison avec un grand jardin clôturé.<br />\r\nUne éducation sera à poursuivre notamment lors des balades car il est très réactif à son environnement : véhicules en mouvement (voitures, camions, vélos...).<br />\r\n<br />\r\nIl s'entend avec les autres chiens sous réserve d'une présentation au refuge.<br />\r\n<br />\r\nPar contre il n'aime pas du tout les chats.<br />\r\n<br />\r\nIl ne sera pas placé avec des jeunes enfants.",
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916712007653281792/raiko-22575-61a77dc0e15ed.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Croisé / Autre, Berger belge Malinois",
+    age: "junior",
+    age_number: 1,
+    establishment: {
+      ID: 7386,
+      name: "Refuge SPA de Tilloy-Les-Mofflaines - Arras",
+    },
+    fad: false,
+    expr: false,
+    sos: false,
+    created_at: "2021-11-17 17:30:02"
+  },
+  {
+    ID: 20383,
+    name: "Anatole",
+    description: "NATOLE est arrivé à notre refuge en provenance d'un autre site de notre réseau. Il vient tenter sa chance par chez nous ;)<br />\r\nANATOLE est un chien de très grand gabarit. Très gentil ses humains, il aime jouer et avoir des câlins. Comme tout bon berger d'Anatolie, il est bon gardien, très, voir trop protecteur avec ses maitres, il faudra donc travailler avec lui dans ce sens, en effet il est pour le moment difficile pour lui d'accepter des inconnus dans son foyer.<br />\r\nAvec ses congénères, il s'entend avec les femelles mais pas avec les mâles. Il ne s'entend pas avec les chats, nous éviterons les jeunes enfants.<br />\r\n<br />\r\nVenez donc faire sa connaissance !<br />\r\n",
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916712651386679317/anatole-20383-61952d7f50ef1.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Berger d'Anatolie",
+    age: "adult",
+    age_number: 4,
+    establishment: {
+      ID: 7405,
+      name: "Refuge SPA d'Yvré-L'Évèque - Le Mans",
+    },
+    fad: false,
+    expr: true,
+    sos: false,
+    created_at: "2021-11-17 17:27:42"
+  },
+  {
+    ID: 19959,
+    name: "Blaze",
+    description: "Blaze est une crème de chien. Calme, propre, il peut rester seul sans faire de bêtises. Il s'adaptera rapidement dans son nouveau foyer. Il devra être le seul animal de la famille. Il sait se montrer bon gardien, il faudra donc faire attention avec les inconnus et il ne pourra pas vivre avec des enfants ni d'autres animaux<br />\r\nplusieurs visites seront nécessaires au refuge avant  le départ.<br />\r\n<br />\r\nBlaze est éligible au programme \"famille d'accueil définitive\", c'est à dire que tous les frais vétérinaires et d'alimentation resteront à la charge de la SPA jusqu'à la fin de sa vie<br />\r\n",
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916713136294330368/blaze-eligible-programme-familles-daccueil-19959-61952d5d014cc.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Croisé / Autre, Pointer",
+    age: "senior",
+    age_number: 11,
+    establishment: {
+      ID: 7375,
+      name: "Refuge SPA de Pornic - Saint-Père en Retz",
+    },
+    fad: true,
+    expr: false,
+    sos: true,
+    created_at: "2021-11-17 17:27:08"
+  },
+  {
+    ID: 19973,
+    name: "Kazy",
+    description: "KAZY a passé sa vie au refuge un peu plus réservé que les autres.. Il a besoin de temps pour faire confiance mais si vous lui accordez ce temps il peu devenir très câlin! Il est très doux et n’a pas une once d’agressivité envers les humains! Il aimerait être adopté avec sa copine de box KELLY! <br />\r\nKAZY est éligible au protocole famille d’accueil. <br />\r\n<br />\r\n",
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916713632413397062/kazy-19973-61952d5d77740.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Croisé / Autre, Dobermann",
+    age: "senior",
+    age_number: 11,
+    establishment: {
+      ID: 7361,
+      name: "Refuge SPA d'Aix-En-Provence - Des Chiens En Liberté",
+    },
+    fad: true,
+    expr: false,
+    sos: true,
+    created_at: "2021-11-17 17:27:08"
+  },
+  {
+    ID: 23236,
+    name: "Phoenix",
+    description: null,
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916714234094694501/phoenix-dit-boy-23236-619d10c40a6bd.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Berger belge Malinois",
+    age: "junior",
+    age_number: 2,
+    establishment: {
+      ID: 7348,
+      name: "Maison SPA de Lons-Le-Saunier",
+    },
+    fad: false,
+    expr: false,
+    sos: false,
+    created_at: "2021-11-17 17:30:47"
+  },
+  {
+    ID: 23236,
+    name: "Phoenix",
+    description: null,
+    image: "https://cdn.discordapp.com/attachments/916711682116567040/916714234094694501/phoenix-dit-boy-23236-619d10c40a6bd.png",
+    sex: "male",
+    species: "dog",
+    races_label: "Berger belge Malinois",
+    age: "junior",
+    age_number: 2,
+    establishment: {
+      ID: 7348,
+      name: "Maison SPA de Lons-Le-Saunier",
+    },
+    fad: false,
+    expr: false,
+    sos: false,
+    created_at: "2021-11-17 17:30:47"
+  }
+]
+
 export default [
  {
       id: 1,

@@ -36,7 +36,7 @@ import { defineComponent, ref, Ref, watch } from "vue";
 import FilterBox from "./components/FilterBox.vue";
 import AnimalCard from "./components/AnimalCard.vue";
 import animals from "src/model/animals";
-import { AnimalFilterBuilder } from "src/composables/useFilter";
+import { AnimalFilterBuilder } from "src/composable/useFilter";
 
 export default defineComponent({
   name: "PageIndex",

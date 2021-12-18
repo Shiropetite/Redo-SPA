@@ -3,9 +3,7 @@
     <router-view name="header" />
 
     <div>
-      <transition appear enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-        <router-view />
-      </transition>
+      <router-view />
     </div>
   </q-layout>
 </template>
